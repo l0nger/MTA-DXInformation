@@ -1,0 +1,19 @@
+function outputClientInformationText(text)
+	triggerClientEvent(root, "outputInformationText", root, text)
+end
+
+addEventHandler("onPlayerJoin", root, function()
+	outputClientInformationText(source, ("#666666%s #ffffffjoined the server."):format(getPlayerName(source):gsub("#%x%x%x%x%x%x", "")))
+end)
+
+addEventHandler("onPlayerQuit", root, function(type)
+	outputClientInformationText(source, ("#666666%s #ffffffleft the server (%s)."):format(getPlayerName(source):gsub("#%x%x%x%x%x%x", ""), type))
+end)
+
+--[[
+test command
+addCommandHandler("info-txt", function(plr, cmd, ...)
+	local txt=table.concat({...}, " ")
+	outputClientInformationText(txt)
+end)
+]]--
