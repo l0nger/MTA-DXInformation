@@ -1,4 +1,9 @@
 <meta>
+  <!-- SCRIPT -->
   <script src="info_s" />
   <script src="info_c" type="client" />
+  
+  <!-- EXPORTS -->
+  <export function="sendInformationToPlayer" type="server" />
+  <export function="sendInformationToAll" type="server" />
 </meta>
