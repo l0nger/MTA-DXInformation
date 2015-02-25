@@ -1,0 +1,4 @@
+<meta>
+  <script src="info_s" />
+  <script src="info_c" type="client" />
+</meta>
