@@ -1,3 +1,10 @@
+--[[
+	MTA-SA DX-Information
+
+	@author: l0nger <l0nger.programmer@gmail.com>
+	@license: GPLv2
+]]
+
 function outputClientInformationText(text)
 	triggerClientEvent(root, "outputInformationText", root, text)
 end
