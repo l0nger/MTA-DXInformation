@@ -1,7 +1,7 @@
 <meta>
   <!-- SCRIPT -->
-  <script src="info_s" />
-  <script src="info_c" type="client" />
+  <script src="info_s.lua" />
+  <script src="info_c.lua" type="client" />
   
   <!-- EXPORTS -->
   <export function="sendInformationToPlayer" type="server" />
